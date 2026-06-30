@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,700;1,17..18,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="side" id="home">
+                <h3>HOME</h3>
+                <div class="black" id="home-score-container">
+                    <h1 id="home-score" class="counter">0</h1>
+                </div>
+                <div class="buttons">
+                    <button class="add-btn" onclick="increment('home', 1)">+1</button>
+                    <button class="add-btn" onclick="increment('home', 2)">+2</button>
+                    <button class="add-btn" onclick="increment('home', 3)">+3</button>
+                </div>
+            </div>
+            <div class="side" id="guest">
+                <h3>GUEST</h3>
+                <div class="black" id="guest-score-container">
+                    <h1 id="guest-score" class="counter">0</h1>
+                </div>
+                <div class="buttons">
+                    <button class="add-btn" onclick="increment('guest', 1)">+1</button>
+                    <button class="add-btn" onclick="increment('guest', 2)">+2</button>
+                    <button class="add-btn" onclick="increment('guest', 3)">+3</button>
+                </div>
+            </div>
+        </div>
+        <button onclick="resetScores()" class="reset-btn">Reset</button>
+        <script src="main.js"></script>
+    </body>
+</html>
